@@ -11,13 +11,12 @@
 //   });
 
 window.addEventListener('DOMContentLoaded', (e) => {
-    // setTimeout(popUpRandomMole, 0)
-        popUpRandomMole();
+    setTimeout(popUpRandomMole, 0)
 
 
 })
 
-function popUpRandomMole () {
+function popUpRandomMole() {
     const moleList = document.querySelectorAll(".wgs__mole-head");
     const randomNum = Math.floor(Math.random() *  8);
     const mole = moleList[randomNum];
